@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shambalinks - Contact Us</title>
+    <link rel="stylesheet" href="../Assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="../index.html" class="logo-container">
+                <div class="logo-placeholder">
+                    <img src="../Assets/images/shambalink logo.jpg" alt="SL" onerror="this.style.display='none'">
+                </div>
+                <div class="logo-text">Shambalinks</div>
+            </a>
+            <nav class="nav-menu">
+                <div class="nav-left">
+                    <a href="../index.html">Home</a>
+                    <div class="nav-dropdown">
+                        <button class="dropbtn">Services <i class="fa-solid fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="marketplace.html"><i class="fa-solid fa-store"></i> Marketplace</a>
+                            <a href="consulting.html"><i class="fa-solid fa-handshake"></i> Consulting</a>
+                            <a href="Services.html#products"><i class="fa-solid fa-box"></i> Products</a>
+                            <a href="Services.html#image-editor"><i class="fa-solid fa-image"></i> Image Editor</a>
+                        </div>
+                    </div>
+                    <div class="nav-dropdown">
+                        <button class="dropbtn">Company <i class="fa-solid fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="About.html"><i class="fa-solid fa-info-circle"></i> About Us</a>
+                            <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+                            <a href="#team"><i class="fa-solid fa-users"></i> Our Team</a>
+                            <a href="#careers"><i class="fa-solid fa-briefcase"></i> Careers</a>
+                        </div>
+                    </div>
+                    <a href="About.html">About</a>
+                    <a href="Services.html">Services</a>
+                </div>
+                <div class="nav-right">
+                    <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+                    <button id="cart-btn" aria-label="Open cart" title="Cart"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count" class="cart-count">0</span></button>
+                    <a href="login.html" id="login-link" class="btn-link"><i class="fa-solid fa-user"></i> Login</a>
+                    <a href="profile.html" id="profile-link" class="btn-link" style="display:none"><i class="fa-solid fa-user-circle"></i> Profile</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+        </div>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message..." required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Section with 3 Images (Images 18-20) -->
+        <div class="image-grid" style="margin-top: 40px;">
+            <div class="card"><img src="../Assets/images/main HQ.jpeg" alt="Main HQ"><div class="card-body"><h3>Main HQ</h3></div></div>
+            <div class="card"><img src="../Assets/images/suporthub.jpeg" alt="Support Hub"><div class="card-body"><h3>Support Hub</h3></div></div>
+            <div class="card"><img src="../Assets/images/R and D.jpeg" alt="R&D Facility"><div class="card-body"><h3>R&D Facility</h3></div></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo-container">
+                    <div class="logo-placeholder">
+                        <img src="../Assets/images/shambalink logo.jpg" alt="SL" onerror="this.style.display='none'">
+                    </div>
+                    <div class="logo-text">Shambalinks</div>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <div class="footer-nav">
+                    <a href="../index.html">Home</a>
+                    <a href="About.html">About</a>
+                    <a href="Services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p>📍 104 Business Way, Tech Park</p>
+                <p>📞 +256 742 258 343</p>
+                <p>✉️ support@shambalinks.com</p>
+            </div>
+            <div class="footer-col">
+               <div class="social-links">
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Shambalinks. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

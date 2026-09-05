@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Marketplace - Shambalinks</title>
+  <link rel="stylesheet" href="../Assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="../index.html" class="logo-container">
+        <div class="logo-placeholder">
+          <img src="../Assets/images/shambalink logo.jpg" alt="SL" onerror="this.style.display='none'">
+        </div>
+        <div class="logo-text">Shambalinks</div>
+      </a>
+      <nav class="nav-menu">
+          <div class="nav-left">
+          <a href="../index.html">Home</a>
+          <div class="nav-dropdown">
+            <button class="dropbtn" aria-expanded="false">Services <i class="fa-solid fa-caret-down"></i></button>
+            <div class="dropdown-content">
+              <a href="marketplace.html"><i class="fa-solid fa-store"></i> Marketplace</a>
+              <a href="consulting.html"><i class="fa-solid fa-handshake"></i> Consulting</a>
+              <a href="Services.html#products"><i class="fa-solid fa-box"></i> Products</a>
+            </div>
+          </div>
+          <a href="About.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-right">
+          <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+          <button id="cart-btn" aria-label="Open cart" title="Cart"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count" class="cart-count">0</span></button>
+          <a href="login.html" id="login-link" class="btn-link"><i class="fa-solid fa-user"></i> Login</a>
+          <a href="profile.html" id="profile-link" class="btn-link" style="display:none"><i class="fa-solid fa-user-circle"></i> Profile</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="container">
+      <div class="section-header"><h2>Marketplace</h2><p>Browse sample products and add to cart.</p></div>
+      <div class="image-grid">
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/seed mix.jpg" alt="Seed Mix A">
+          </div>
+          <div class="card-body">
+            <h3>Seed Mix A</h3>
+            <p class="product-description">UGX 15,000 — Heirloom seed mix for small plots.</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Seed Mix A', price:15000, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Smart Drip Starter.jpg" alt="Smart Drip Starter">
+          </div>
+          <div class="card-body">
+            <h3>Smart Drip Starter</h3>
+            <p class="product-description">UGX 120,000 — Compact drip irrigation starter kit.</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Smart Drip Starter', price:120000, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Soil Sensor Pro.jpg" alt="Soil Sensor Pro">
+          </div>
+          <div class="card-body">
+            <h3>Soil Sensor Pro</h3>
+            <p class="product-description">UGX 85,000 — pH and moisture telemetry sensor.</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Soil Sensor Pro', price:85000, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Fertilizer Pack.jpg" alt="Fertilizer Pack">
+          </div>
+          <div class="card-body">
+            <h3>Fertilizer Pack</h3>
+            <p class="product-description">UGX 40,000 — Balanced NPK for field crops.</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Fertilizer Pack', price:40000, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Mulch Sheet.jpg" alt="Mulch Sheet">
+          </div>
+          <div class="card-body">
+            <h3>Mulch Sheet</h3>
+            <p class="product-description">UGX 18,500 — UV-resistant mulch sheet (per roll).</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Mulch Sheet', price:18500, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Sprayer Kit.jpg" alt="Sprayer Kit">
+          </div>
+          <div class="card-body">
+            <h3>Sprayer Kit</h3>
+            <p class="product-description">UGX 55,000 — Manual farm sprayer with nozzle set.</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Sprayer Kit', price:55000, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Seedling Tray.jpg" alt="Seedling Tray">
+          </div>
+          <div class="card-body">
+            <h3>Seedling Tray</h3>
+            <p class="product-description">UGX 7,500 — Durable seedling tray (per unit).</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Seedling Tray', price:7500, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Compost Starter.jpg" alt="Compost Starter">
+          </div>
+          <div class="card-body">
+            <h3>Compost Starter</h3>
+            <p class="product-description">UGX 22,000 — Quick compost starter mix (5kg).</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Compost Starter', price:22000, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Harvest Crate.jpg" alt="Harvest Crate">
+          </div>
+          <div class="card-body">
+            <h3>Harvest Crate</h3>
+            <p class="product-description">UGX 12,000 — Stackable plastic harvest crate.</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Harvest Crate', price:12000, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Irrigation Filter.jpg" alt="Irrigation Filter">
+          </div>
+          <div class="card-body">
+            <h3>Irrigation Filter</h3>
+            <p class="product-description">UGX 28,000 — In-line filter for drip systems.</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Irrigation Filter', price:28000, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/pH Test Kit.jpg" alt="pH Test Kit">
+          </div>
+          <div class="card-body">
+            <h3>pH Test Kit</h3>
+            <p class="product-description">UGX 9,800 — Field pH test kit with strips.</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'pH Test Kit', price:9800, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Solar Water Pump.jpg" alt="Solar Water Pump">
+          </div>
+          <div class="card-body">
+            <h3>Solar Water Pump</h3>
+            <p class="product-description">UGX 450,000 — Compact solar pump for boreholes.</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Solar Water Pump', price:450000, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Greenhouse Film.jpg" alt="Greenhouse Film">
+          </div>
+          <div class="card-body">
+            <h3>Greenhouse Film</h3>
+            <p class="product-description">UGX 95,000 — UV-stabilized greenhouse film (per roll).</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Greenhouse Film', price:95000, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Mesh Netting.jpg" alt="Mesh Netting">
+          </div>
+          <div class="card-body">
+            <h3>Mesh Netting</h3>
+            <p class="product-description">UGX 32,000 — Bird and insect protection netting (per roll).</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Mesh Netting', price:32000, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Hand Tools Set.jpg" alt="Hand Tools Set">
+          </div>
+          <div class="card-body">
+            <h3>Hand Tools Set</h3>
+            <p class="product-description">UGX 27,000 — Basic hand tools for smallholder farms.</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Hand Tools Set', price:27000, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Beehive Box.jpg" alt="Beehive Box">
+          </div>
+          <div class="card-body">
+            <h3>Beehive Box</h3>
+            <p class="product-description">UGX 65,000 — Starter beehive box for apiculture.</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Beehive Box', price:65000, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Crop Net.jpg" alt="Crop Net">
+          </div>
+          <div class="card-body">
+            <h3>Crop Net</h3>
+            <p class="product-description">UGX 22,500 — Lightweight crop protection netting.</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Crop Net', price:22500, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Water Can.jpg" alt="Water Can">
+          </div>
+          <div class="card-body">
+            <h3>Water Can</h3>
+            <p class="product-description">UGX 8,500 — Durable watering can (10L).</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Water Can', price:8500, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Shade Cloth.jpg" alt="Shade Cloth">
+          </div>
+          <div class="card-body">
+            <h3>Shade Cloth</h3>
+            <p class="product-description">UGX 34,000 — 70% shade cloth (per roll).</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Shade Cloth', price:34000, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Soil Conditioner.jpg" alt="Soil Conditioner">
+          </div>
+          <div class="card-body">
+            <h3>Soil Conditioner</h3>
+            <p class="product-description">UGX 19,000 — Organic soil conditioner (10kg).</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Soil Conditioner', price:19000, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Harvest Knife.jpg" alt="Harvest Knife">
+          </div>
+          <div class="card-body">
+            <h3>Harvest Knife</h3>
+            <p class="product-description">UGX 6,500 — Sharp harvesting knife.</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Harvest Knife', price:6500, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Handheld GPS.jpg" alt="Handheld GPS">
+          </div>
+          <div class="card-body">
+            <h3>Handheld GPS</h3>
+            <p class="product-description">UGX 210,000 — GPS device for farm mapping.</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Handheld GPS', price:210000, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Cold Storage Box.jpg" alt="Cold Storage Box">
+          </div>
+          <div class="card-body">
+            <h3>Cold Storage Box</h3>
+            <p class="product-description">UGX 320,000 — Insulated cold box for produce.</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Cold Storage Box', price:320000, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Seed Treatment.jpg" alt="Seed Treatment">
+          </div>
+          <div class="card-body">
+            <h3>Seed Treatment</h3>
+            <p class="product-description">UGX 11,500 — Protective seed treatment (per pack).</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Seed Treatment', price:11500, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="../Assets/images/Field Marker Paint.jpg" alt="Field Marker Paint">
+          </div>
+          <div class="card-body">
+            <h3>Field Marker Paint</h3>
+            <p class="product-description">UGX 4,500 — Long-lasting marker paint (500ml).</p>
+            <button class="btn" onclick="window.addToCart && window.addToCart({name:'Field Marker Paint', price:4500, type:'product'})">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+ <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo-container">
+                    <div class="logo-placeholder">
+                        <img src="../Assets/images/shambalink logo.jpg" alt="SL" onerror="this.style.display='none'">
+                    </div>
+                    <div class="logo-text">Shambalinks</div>
+                </div>
+                <p style="margin-top: 10px; font-size: 0.9rem;">Empowering local networks with global sustainable technologies.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <div class="footer-nav">
+                    <a href="../index.html">Home</a>
+                    <a href="About.html">About</a>
+                    <a href="Services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p>📍 104 Business Way, Tech Park</p>
+                <p>📞 +1 (800) 555-SHAMBA</p>
+                <p>✉️ support@shambalinks.com</p>
+            </div>
+            <div class="footer-col">
+               <div class="social-links">
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Shambalinks. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+  <script src="../Assets/js/script.js"></script>
+</body>
+</html>

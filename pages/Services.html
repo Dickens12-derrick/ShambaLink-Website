@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shambalinks - Services</title>
+    <link rel="stylesheet" href="../Assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="../index.html" class="logo-container">
+                <div class="logo-placeholder">
+                    <img src="../Assets/images/shambalink logo.jpg" alt="SL" onerror="this.style.display='none'">
+                </div>
+                <div class="logo-text">Shambalinks</div>
+            </a>
+            <nav class="nav-menu">
+                <div class="nav-left">
+                    <a href="../index.html">Home</a>
+                    <div class="nav-dropdown">
+                        <button class="dropbtn">Services <i class="fa-solid fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="marketplace.html"><i class="fa-solid fa-store"></i> Marketplace</a>
+                            <a href="consulting.html"><i class="fa-solid fa-handshake"></i> Consulting</a>
+                            <a href="#products"><i class="fa-solid fa-box"></i> Products</a>
+                            <a href="#image-editor"><i class="fa-solid fa-image"></i> Image Editor</a>
+                        </div>
+                    </div>
+                    <div class="nav-dropdown">
+                        <button class="dropbtn">Company <i class="fa-solid fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="About.html"><i class="fa-solid fa-info-circle"></i> About Us</a>
+                            <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+                            <a href="#team"><i class="fa-solid fa-users"></i> Our Team</a>
+                            <a href="#careers"><i class="fa-solid fa-briefcase"></i> Careers</a>
+                        </div>
+                    </div>
+                    <a href="About.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="nav-right">
+                    <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+                    <button id="cart-btn" aria-label="Open cart" title="Cart"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count" class="cart-count">0</span></button>
+                    <a href="login.html" id="login-link" class="btn-link"><i class="fa-solid fa-user"></i> Login</a>
+                    <a href="profile.html" id="profile-link" class="btn-link" style="display:none"><i class="fa-solid fa-user-circle"></i> Profile</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="section-header">
+            <h2>Our Specialized Solutions</h2>
+            <p style="max-width: 800px; margin: 10px auto 0;">Explore our tailored suite of tech-enabled services designed to streamline farming operations, improve yields, and maximize market reach.</p>
+        </div>
+
+        <!-- Section with 5 Cards -->
+        <div class="image-grid">
+            <div class="card">
+                <img src="../Assets/images/crop advisory.jpeg" alt="Crop Advisory">
+                <div class="card-body">
+                    <h3>Crop Advisory</h3>
+                    <p>Expert agronomic guidance tailored to specific soil types, regional microclimates, and market demand forecasts.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../Assets/images/logistic tracking.jpeg" alt="Logistics Tracking">
+                <div class="card-body">
+                    <h3>Logistics Tracking</h3>
+                    <p>End-to-end supply chain visibility using GPS-tracked cold storage transport to minimize post-harvest loss.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../Assets/images/climate.png" alt="Climate Forecasting">
+                <div class="card-body">
+                    <h3>Climate Forecasting</h3>
+                    <p>Hyper-local weather telemetry and early warning systems to protect crops against extreme microclimate shifts.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../Assets/images/market distribution.jpeg" alt="Market Analysis">
+                <div class="card-body">
+                    <h3>Market Analysis</h3>
+                    <p>Real-time commodity price tracking to help farmers negotiate optimal pricing and identify high-demand buyer networks.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../Assets/images/financial.jpeg" alt="Financial Support">
+                <div class="card-body">
+                    <h3>Financial Support</h3>
+                    <p>Facilitating micro-loans, agricultural insurance, and equipment leasing programs tailored to seasonal harvests.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Products Section with 15 Products -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Products</h2>
+                <p style="max-width: 800px; margin: 10px auto 0;">Browse our curated range of agricultural technologies, tools, and solutions designed for modern farming.</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../Assets/images/organic.jpeg" alt="Organic Fertilizer">
+                        <div class="product-overlay">
+                            <button class="btn" onclick="window.addToCart &amp;&amp; window.addToCart({name:'Organic Fertilizer', price:29.99})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Fertilizers</div>
+                        <h3 class="product-name">Organic Fertilizer</h3>
+                        <p class="product-description">Premium compost-enriched fertilizer for soil vitality.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$29.99</span>
+                            <span class="product-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../Assets/images/water management.jpeg" alt="Smart Drip Kit">
+                        <div class="product-overlay">
+                            <button class="btn" onclick="window.addToCart &amp;&amp; window.addToCart({name:'Smart Drip Kit', price:49.99})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Irrigation</div>
+                        <h3 class="product-name">Smart Drip Kit</h3>
+                        <p class="product-description">Automated water-saving drip irrigation system.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$49.99</span>
+                            <span class="product-rating"><i class="fa-solid fa-star"></i> 4.7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../Assets/images/soil monitoring.jpeg" alt="Soil Sensor Pro">
+                        <div class="product-overlay">
+                            <button class="btn" onclick="window.addToCart &amp;&amp; window.addToCart({name:'Soil Sensor Pro', price:79.99})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Monitoring</div>
+                        <h3 class="product-name">Soil Sensor Pro</h3>
+                        <p class="product-description">Real-time soil telemetry with mobile alerts.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$79.99</span>
+                            <span class="product-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../Assets/images/crop advisory.jpeg" alt="Crop Advisory Package">
+                        <div class="product-overlay">
+                            <button class="btn" onclick="window.addToCart &amp;&amp; window.addToCart({name:'Crop Advisory Package', price:199.99})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Advisory</div>
+                        <h3 class="product-name">Crop Advisory Package</h3>
+                        <p class="product-description">Expert agronomic guidance tailored to your farm.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$199.99</span>
+                            <span class="product-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../Assets/images/climate.png" alt="Climate Monitor">
+                        <div class="product-overlay">
+                            <button class="btn" onclick="window.addToCart &amp;&amp; window.addToCart({name:'Climate Monitor', price:149.99})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Forecasting</div>
+                        <h3 class="product-name">Climate Monitor</h3>
+                        <p class="product-description">Hyper-local weather telemetry and early warnings.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$149.99</span>
+                            <span class="product-rating"><i class="fa-solid fa-star"></i> 4.6</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../Assets/images/logistic tracking.jpeg" alt="GPS Tracker">
+                        <div class="product-overlay">
+                            <button class="btn" onclick="window.addToCart &amp;&amp; window.addToCart({name:'GPS Tracker', price:89.99})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Logistics</div>
+                        <h3 class="product-name">GPS Tracker</h3>
+                        <p class="product-description">Real-time GPS tracking for farm equipment.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$89.99</span>
+                            <span class="product-rating"><i class="fa-solid fa-star"></i> 4.5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../Assets/images/eco.jpeg" alt="Eco Compost Bin">
+                        <div class="product-overlay">
+                            <button class="btn" onclick="window.addToCart &amp;&amp; window.addToCart({name:'Eco Compost Bin', price:39.99})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Composting</div>
+                        <h3 class="product-name">Eco Compost Bin</h3>
+                        <p class="product-description">Accelerated composting system for organic waste.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$39.99</span>
+                            <span class="product-rating"><i class="fa-solid fa-star"></i> 4.7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../Assets/images/financial.jpeg" alt="Farm Insurance Plan">
+                        <div class="product-overlay">
+                            <button class="btn" onclick="window.addToCart &amp;&amp; window.addToCart({name:'Farm Insurance Plan', price:299.99})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Insurance</div>
+                        <h3 class="product-name">Farm Insurance Plan</h3>
+                        <p class="product-description">Comprehensive crop and equipment coverage.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$299.99</span>
+                            <span class="product-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../Assets/images/agri tech.jpeg" alt="Drone Sprayer">
+                        <div class="product-overlay">
+                            <button class="btn" onclick="window.addToCart &amp;&amp; window.addToCart({name:'Drone Sprayer', price:499.99})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Technology</div>
+                        <h3 class="product-name">Drone Sprayer</h3>
+                        <p class="product-description">Autonomous precision spraying drone for farms.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$499.99</span>
+                            <span class="product-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../Assets/images/market distribution.jpeg" alt="Market Access Pass">
+                        <div class="product-overlay">
+                            <button class="btn" onclick="window.addToCart &amp;&amp; window.addToCart({name:'Market Access Pass', price:59.99})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Market Access</div>
+                        <h3 class="product-name">Market Access Pass</h3>
+                        <p class="product-description">Connect directly with premium buyer networks.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$59.99</span>
+                            <span class="product-rating"><i class="fa-solid fa-star"></i> 4.6</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../Assets/images/innovation.jpeg" alt="Solar Pump">
+                        <div class="product-overlay">
+                            <button class="btn" onclick="window.addToCart &amp;&amp; window.addToCart({name:'Solar Pump', price:199.99})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Energy</div>
+                        <h3 class="product-name">Solar Pump</h3>
+                        <p class="product-description">Solar-powered water pump for remote fields.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$199.99</span>
+                            <span class="product-rating"><i class="fa-solid fa-star"></i> 4.7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../Assets/images/growth.jpeg" alt="Growth Booster">
+                        <div class="product-overlay">
+                            <button class="btn" onclick="window.addToCart &amp;&amp; window.addToCart({name:'Growth Booster', price:24.99})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Nutrients</div>
+                        <h3 class="product-name">Growth Booster</h3>
+                        <p class="product-description">Organic plant growth stimulant and enhancer.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$24.99</span>
+                            <span class="product-rating"><i class="fa-solid fa-star"></i> 4.5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../Assets/images/global.jpeg" alt="Export Kit">
+                        <div class="product-overlay">
+                            <button class="btn" onclick="window.addToCart &amp;&amp; window.addToCart({name:'Export Kit', price:349.99})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Export</div>
+                        <h3 class="product-name">Export Kit</h3>
+                        <p class="product-description">Complete packaging solution for international export.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$349.99</span>
+                            <span class="product-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../Assets/images/sustainable.jpeg" alt="Seed Bank">
+                        <div class="product-overlay">
+                            <button class="btn" onclick="window.addToCart &amp;&amp; window.addToCart({name:'Seed Bank', price:19.99})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Seeds</div>
+                        <h3 class="product-name">Seed Bank</h3>
+                        <p class="product-description">Heirloom and drought-resistant seed collection.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$19.99</span>
+                            <span class="product-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../Assets/images/bridging gap.jpg" alt="Farm Management App">
+                        <div class="product-overlay">
+                            <button class="btn" onclick="window.addToCart &amp;&amp; window.addToCart({name:'Farm Management App', price:9.99})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Software</div>
+                        <h3 class="product-name">Farm Management App</h3>
+                        <p class="product-description">All-in-one farm planning and tracking software.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$9.99</span>
+                            <span class="product-rating"><i class="fa-solid fa-star"></i> 4.7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo-container">
+                    <div class="logo-placeholder">
+                        <img src="../Assets/images/shambalink logo.jpg" alt="SL" onerror="this.style.display='none'">
+                    </div>
+                    <div class="logo-text">Shambalinks</div>
+                </div>
+                <p style="margin-top: 10px; font-size: 0.9rem;">Empowering local networks with global sustainable technologies.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <div class="footer-nav">
+                    <a href="../index.html">Home</a>
+                    <a href="About.html">About</a>
+                    <a href="Services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p>📍 104 Business Way, Tech Park</p>
+                <p>📞 +1 (800) 555-SHAMBA</p>
+                <p>✉️ support@shambalinks.com</p>
+            </div>
+            <div class="footer-col">
+               <div class="social-links">
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Shambalinks. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../Assets/js/script.js"></script>
+</body>
+</html>

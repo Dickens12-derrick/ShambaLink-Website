@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Shambalinks</title>
+    <link rel="stylesheet" href="../Assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="../index.html" class="logo-container">
+                <div class="logo-placeholder">
+                    <img src="../Assets/images/shambalink logo.jpg" alt="SL" onerror="this.style.display='none'">
+                </div>
+                <div class="logo-text">Shambalinks</div>
+            </a>
+            <nav class="nav-menu">
+                <div class="nav-left">
+                    <a href="../index.html">Home</a>
+                    <div class="nav-dropdown">
+                        <button class="dropbtn">Services <i class="fa-solid fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="marketplace.html"><i class="fa-solid fa-store"></i> Marketplace</a>
+                            <a href="consulting.html"><i class="fa-solid fa-handshake"></i> Consulting</a>
+                            <a href="Services.html#products"><i class="fa-solid fa-box"></i> Products</a>
+                        </div>
+                    </div>
+                    <a href="About.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="nav-right">
+                    <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+                    <button id="cart-btn" aria-label="Open cart" title="Cart"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count" class="cart-count">0</span></button>
+                    <a href="profile.html" id="profile-link" class="btn-link"><i class="fa-solid fa-user-circle"></i> Profile</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section-header">
+            <h2>Your Profile</h2>
+            <p>Welcome to your account, where your account details and shopping activity live.</p>
+        </section>
+
+        <div class="profile-panel">
+            <div class="profile-hero">
+                <div class="user-avatar" id="profile-avatar">A</div>
+                <div>
+                    <p class="muted-label">Account holder</p>
+                    <h3 id="profile-name">-</h3>
+                </div>
+            </div>
+            <div class="profile-details">
+                <div>
+                    <label>Email</label>
+                    <p id="profile-email">-</p>
+                </div>
+                <div>
+                    <label>Joined on</label>
+                    <p id="profile-joined">-</p>
+                </div>
+                <div>
+                    <label>Account status</label>
+                    <p>Active</p>
+                </div>
+            </div>
+            <button id="signout" class="btn">Sign Out</button>
+        </div>
+    </main>
+
+    <script src="../Assets/js/script.js"></script>
+    <script>
+        function getUser(){ try { return JSON.parse(localStorage.getItem('shambalinks_user')) } catch(e){ return null } }
+        const user = getUser();
+        if (!user){ window.location.href = 'login.html'; }
+        else {
+            const name = user.name || 'Member';
+            const avatar = name.charAt(0).toUpperCase();
+            document.getElementById('profile-avatar').textContent = avatar;
+            document.getElementById('profile-name').textContent = name;
+            document.getElementById('profile-email').textContent = user.email || '-';
+            document.getElementById('profile-joined').textContent = new Date(user.joined || Date.now()).toLocaleDateString();
+        }
+
+        document.getElementById('signout').addEventListener('click', ()=>{
+            localStorage.removeItem('shambalinks_user');
+            window.location.href = '../index.html';
+        });
+    </script>
+</body>
+</html>

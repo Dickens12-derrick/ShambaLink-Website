@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Consulting - Shambalinks</title>
+  <link rel="stylesheet" href="../Assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="../index.html" class="logo-container">
+        <div class="logo-placeholder">
+          <img src="../Assets/images/shambalink logo.jpg" alt="SL" onerror="this.style.display='none'">
+        </div>
+        <div class="logo-text">Shambalinks</div>
+      </a>
+      <nav class="nav-menu">
+        <div class="nav-left">
+          <a href="../index.html">Home</a>
+          <div class="nav-dropdown">
+            <button class="dropbtn" aria-expanded="false">Services <i class="fa-solid fa-caret-down"></i></button>
+            <div class="dropdown-content">
+              <a href="marketplace.html"><i class="fa-solid fa-store"></i> Marketplace</a>
+              <a href="consulting.html"><i class="fa-solid fa-handshake"></i> Consulting</a>
+              <a href="Services.html#products"><i class="fa-solid fa-box"></i> Products</a>
+            </div>
+          </div>
+          <a href="About.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-right">
+          <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+          <button id="cart-btn" aria-label="Open cart" title="Cart"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count" class="cart-count">0</span></button>
+          <a href="login.html" id="login-link" class="btn-link"><i class="fa-solid fa-user"></i> Login</a>
+          <a href="profile.html" id="profile-link" class="btn-link" style="display:none"><i class="fa-solid fa-user-circle"></i> Profile</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section-header">
+      <h2>Consulting</h2>
+      <p>We offer tailored agritech consulting services. Contact us to schedule a discovery call.</p>
+    </section>
+
+    <div class="image-grid">
+      <div class="card">
+        <img src="../Assets/images/crop advisory.jpeg" alt="Advisory">
+        <div class="card-body">
+          <h3>Field Assessment</h3>
+          <p>Detailed soil and crop evaluation with actionable recommendations for healthier yields.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../Assets/images/logistic tracking.jpeg" alt="Operations">
+        <div class="card-body">
+          <h3>Operations Design</h3>
+          <p>Streamlined farm workflows and logistics planning focused on efficiency and resilience.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../Assets/images/climate.png" alt="Climate strategy">
+        <div class="card-body">
+          <h3>Climate Strategy</h3>
+          <p>Weather-informed planning, crop protection strategies, and adaptation advice.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="padding: 30px; max-width: 900px; margin: 40px auto 0;">
+      <h3>Engagements</h3>
+      <ul style="list-style: disc; padding-left: 20px; margin-top: 14px; color: var(--text-muted);">
+        <li>Field assessments & soil audits</li>
+        <li>IoT deployment & telemetry design</li>
+        <li>Market access strategy</li>
+        <li>Commercial growth planning</li>
+      </ul>
+      <p style="margin-top: 18px;">To request a quote, email <a href="mailto:support@shambalinks.com">support@shambalinks.com</a> or use the Contact page.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <div class="logo-container">
+          <div class="logo-placeholder">
+            <img src="../Assets/images/shambalink logo.jpg" alt="SL" onerror="this.style.display='none'">
+          </div>
+          <div class="logo-text">Shambalinks</div>
+        </div>
+        <p style="margin-top: 10px; font-size: 0.9rem;">Empowering local networks with global sustainable technologies.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <div class="footer-nav">
+          <a href="../index.html">Home</a>
+          <a href="About.html">About</a>
+          <a href="Services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <p>📍 104 Business Way, Tech Park</p>
+        <p>📞 +256 742 258 343</p>
+        <p>✉️ support@shambalinks.com</p>
+      </div>
+      <div class="footer-col">
+        <div class="social-links">
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Shambalinks. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../Assets/js/script.js"></script>
+</body>
+</html>

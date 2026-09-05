@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shambalinks - Home</title>
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo-container">
+                <div class="logo-placeholder">
+                    <img src="Assets/images/shambalink logo.jpg" alt="SL" onerror="this.style.display='none'">
+                </div>
+                <div class="logo-text">Shambalinks</div>
+            </a>
+            <nav class="nav-menu">
+                <div class="nav-left">
+                    <a href="index.html" class="active">Home</a>
+                    <div class="nav-dropdown">
+                        <button class="dropbtn" aria-expanded="false">Services <i class="fa-solid fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="pages/marketplace.html"><i class="fa-solid fa-store"></i> Marketplace</a>
+                            <a href="pages/consulting.html"><i class="fa-solid fa-handshake"></i> Consulting</a>
+                            <a href="#products"><i class="fa-solid fa-box"></i> Products</a>
+                            <a href="pages/contact.html"><i class="fa-solid fa-envelope"></i> Request Service</a>
+                        </div>
+                    </div>
+                    <div class="nav-dropdown">
+                        <button class="dropbtn" aria-expanded="false">Company <i class="fa-solid fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="pages/About.html"><i class="fa-solid fa-info-circle"></i> About Us</a>
+                            <a href="pages/contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+                            <a href="#team"><i class="fa-solid fa-users"></i> Our Team</a>
+                            <a href="#careers"><i class="fa-solid fa-briefcase"></i> Careers</a>
+                        </div>
+                    </div>
+                    <a href="pages/About.html">About</a>
+                    <a href="pages/contact.html">Contact</a>
+                </div>
+                <div class="nav-right">
+                    <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+                    <button id="cart-btn" aria-label="Open cart" title="Cart"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count" class="cart-count">0</span></button>
+                    <a href="pages/login.html" id="login-link" class="btn-link"><i class="fa-solid fa-user"></i> Login</a>
+                    <a href="pages/profile.html" id="profile-link" class="btn-link" style="display:none"><i class="fa-solid fa-user-circle"></i> Profile</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-slider-section">
+            <div class="slider-container">
+                <button class="slider-btn prev">&#10094;</button>
+                <button class="slider-btn next">&#10095;</button>
+                
+                <!-- Slides -->
+                <div class="slide active">
+                    <img src="Assets/images/innovation.jpg" alt="Agricultural Innovation">
+                    <div class="slide-content">
+                        <p class="subtheme">Agricultural Innovation</p>
+                        <h1 class="theme">Connecting Sustainable Farmers Worldwide</h1>
+                        <div class="hero-ctas" style="margin-top:18px; display:flex; gap:12px;">
+                            <a href="pages/marketplace.html" class="btn">Explore Marketplace</a>
+                            <a href="pages/contact.html" class="btn btn-outline">Request Consultation</a>
+                        </div>
+                    </div>
+                </div>
+             
+                <div class="slide">
+                    <img src="Assets/images/lucius-amberg-Qi2O3SMJAsY-unsplash.jpg" alt="Smart Eco-Solutions">
+                    <div class="slide-content">
+                        <p class="subtheme">Smart Eco-Solutions</p>
+                        <h1 class="theme">Optimizing Crop Yields with Modern Tech</h1>
+                    </div>
+                </div>
+                
+                <div class="slide">
+                    <img src="Assets/images/bridging gap.jpg" alt="Global Distribution">
+                    <div class="slide-content">
+                        <p class="subtheme">Global Distribution</p>
+                        <h1 class="theme">Bridging the Gap Between Farm and Market</h1>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="Assets/images/sustainable.jpeg" alt="Sustainable Farming">
+                    <div class="slide-content">
+                        <p class="subtheme">Sustainable Future</p>
+                        <h1 class="theme">Building Eco-Friendly Agricultural Networks</h1>
+                    </div>
+                </div>
+
+                <!-- Slider Dots -->
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h3>Smart Farming</h3>
+                    <p>IoT-powered crop monitoring and automated irrigation systems for maximum efficiency.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3>Market Access</h3>
+                    <p>Direct connection to buyers eliminating middlemen and maximizing farmer profits.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-cloud-sun"></i>
+                    </div>
+                    <h3>Climate Data</h3>
+                    <p>Hyper-local weather forecasting and climate advisory for informed decisions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <h3>Financial Support</h3>
+                    <p>Micro-loans, insurance, and financial tools tailored for agricultural success.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section container" id="team">
+            <div class="section-header">
+                <h2>Meet Our Team</h2>
+                <p>Local experts and global advisors dedicated to supporting your farm and business.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card card">
+                    <div class="card-img-wrapper">
+                        <div class="team-photo-placeholder">Image</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Member Name</h3>
+                        <p class="muted-label">Role / Agronomist</p>
+                        <p class="product-description">Short bio or specialties go here. Replace with real photo and details.</p>
+                    </div>
+                </div>
+                <div class="team-card card">
+                    <div class="card-img-wrapper">
+                        <div class="team-photo-placeholder">Image</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Member Name</h3>
+                        <p class="muted-label">Role / Field Officer</p>
+                        <p class="product-description">Short bio or specialties go here. Replace with real photo and details.</p>
+                    </div>
+                </div>
+                <div class="team-card card">
+                    <div class="card-img-wrapper">
+                        <div class="team-photo-placeholder">Image</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Member Name</h3>
+                        <p class="muted-label">Role / Operations</p>
+                        <p class="product-description">Short bio or specialties go here. Replace with real photo and details.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500" data-suffix="+">0</div>
+                    <div class="stat-label">Farming Communities</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10000" data-suffix="+">0</div>
+                    <div class="stat-label">Active Farmers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50" data-suffix="+">0</div>
+                    <div class="stat-label">Countries Reached</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="98" data-suffix="%">0</div>
+                    <div class="stat-label">Satisfaction Rate</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" id="profile-summary">
+            <div class="summary-card">
+                <div class="summary-header">
+                    <span class="status-dot"></span>
+                    <strong>Member dashboard</strong>
+                </div>
+                <div class="summary-body">
+                    <div>
+                        <p class="muted-label">Account</p>
+                        <h3 id="user-profile-name">Welcome, guest</h3>
+                    </div>
+                    <div>
+                        <p class="muted-label">Saved access</p>
+                        <p id="user-profile-status">Login to unlock your profile and personal dashboard.</p>
+                    </div>
+                    <a href="pages/login.html" class="btn btn-outline">Login to continue</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container payment-section">
+            <div class="section-header">
+                <h2>Flexible Payment Options</h2>
+                <p>Simple, secure, and trusted payment methods for every order.</p>
+            </div>
+            <div class="payment-methods">
+                <span class="payment-pill"><i class="fa-brands fa-cc-visa"></i> Visa</span>
+                <span class="payment-pill"><i class="fa-brands fa-cc-mastercard"></i> Mastercard</span>
+                <span class="payment-pill"><i class="fa-brands fa-cc-paypal"></i> PayPal</span>
+                <span class="payment-pill"><i class="fa-solid fa-wallet"></i> Mobile Money</span>
+                <span class="payment-pill"><i class="fa-solid fa-building-columns"></i> Bank Transfer</span>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products-section" id="products">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Products</h2>
+                    <p>Discover our range of agricultural solutions designed to boost productivity and sustainability.</p>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="product-placeholder" aria-hidden="true">Image placeholder</div>
+                            <div class="product-overlay">
+                                <button class="btn" onclick="window.addToCart && window.addToCart({name:'Organic Seeds Pack', price:29900, type:'product'})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Seeds</div>
+                            <h3 class="product-name">Organic Seeds Pack</h3>
+                            <p class="product-description">Premium heirloom seeds optimized for local climates and soil conditions.</p>
+                            <div class="product-footer">
+                                <span class="product-price">UGX 29,900</span>
+                                <span class="product-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="product-placeholder" aria-hidden="true">Image placeholder</div>
+                            <div class="product-overlay">
+                                <button class="btn" onclick="window.addToCart && window.addToCart({name:'Smart Drip Kit', price:149000, type:'product'})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Irrigation</div>
+                            <h3 class="product-name">Smart Drip Kit</h3>
+                            <p class="product-description">Automated drip irrigation with moisture sensors for water conservation.</p>
+                            <div class="product-footer">
+                                <span class="product-price">UGX 149,000</span>
+                                <span class="product-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="product-placeholder" aria-hidden="true">Image placeholder</div>
+                            <div class="product-overlay">
+                                <button class="btn" onclick="window.addToCart && window.addToCart({name:'Soil Monitoring Sensor', price:89900, type:'product'})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Monitoring</div>
+                            <h3 class="product-name">Soil Monitoring Sensor</h3>
+                            <p class="product-description">Real-time NPK, pH, and moisture telemetry sent to your smartphone.</p>
+                            <div class="product-footer">
+                                <span class="product-price">UGX 89,900</span>
+                                <span class="product-rating"><i class="fa-solid fa-star"></i> 4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="product-placeholder" aria-hidden="true">Image placeholder</div>
+                            <div class="product-overlay">
+                                <a class="btn" href="pages/contact.html"><i class="fa-solid fa-envelope"></i> Request Service</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Advisory</div>
+                            <h3 class="product-name">Crop Advisory Package</h3>
+                            <p class="product-description">Expert agronomic guidance tailored to your specific farm conditions.</p>
+                            <div class="product-footer">
+                                <span class="product-price">UGX 199,000</span>
+                                <span class="product-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo-container">
+                    <div class="logo-placeholder">
+                        <img src="Assets/images/shambalink logo.jpg" alt="SL" onerror="this.style.display='none'">
+                    </div>
+                    <div class="logo-text">Shambalinks</div>
+                </div>
+                <p style="margin-top: 10px; font-size: 0.9rem;">Empowering local networks with global sustainable technologies.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <div class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="pages/About.html">About</a>
+                    <a href="pages/Services.html">Services</a>
+                    <a href="pages/contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p>📍 104 Business Way, Tech Park</p>
+                <p>📞 +256 742 258 343</p>
+                <p>✉️ support@shambalinks.com</p>
+            </div>
+            <div class="footer-col">
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Shambalinks. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="Assets/js/script.js"></script>
+</body>
+</html>
