@@ -58,9 +58,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const userPref = localStorage.getItem('shambalinks_theme');
     if (userPref === 'dark') document.body.classList.add('dark');
     if (themeToggle) {
+        const isDark = document.body.classList.contains('dark');
+        themeToggle.classList.toggle('is-dark', isDark);
+        themeToggle.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+        themeToggle.setAttribute('title', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+    }
+    if (themeToggle) {
         themeToggle.addEventListener('click', () => {
             document.body.classList.toggle('dark');
-            localStorage.setItem('shambalinks_theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+            const isDark = document.body.classList.contains('dark');
+            localStorage.setItem('shambalinks_theme', isDark ? 'dark' : 'light');
+            themeToggle.classList.toggle('is-dark', isDark);
+            themeToggle.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+            themeToggle.setAttribute('title', isDark ? 'Switch to light theme' : 'Switch to dark theme');
         });
     }
 
@@ -92,6 +102,12 @@ document.addEventListener('DOMContentLoaded', () => {
         renderProfileSummary();
     }
     updateAuthLinks();
+
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav-left > a').forEach(link => {
+        const linkPage = link.pathname.split('/').pop() || 'index.html';
+        link.classList.toggle('active', linkPage === currentPage && !link.hash);
+    });
 
     // Basic cart using localStorage
     const cartKey = 'shambalinks_cart';

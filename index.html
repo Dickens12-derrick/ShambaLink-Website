@@ -43,7 +43,7 @@
                 <div class="nav-right">
                     <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme"><i class="fa-solid fa-moon"></i></button>
                     <button id="cart-btn" aria-label="Open cart" title="Cart"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count" class="cart-count">0</span></button>
-                    <a href="pages/login.html" id="login-link" class="btn-link"><i class="fa-solid fa-user"></i> Login</a>
+                    <a href="pages/login.html" id="login-link" class="btn-link icon-only" aria-label="Login" title="Login"><i class="fa-solid fa-user"></i><span class="sr-only">Login</span></a>
                     <a href="pages/profile.html" id="profile-link" class="btn-link" style="display:none"><i class="fa-solid fa-user-circle"></i> Profile</a>
                 </div>
             </nav>
@@ -147,33 +147,56 @@
             <div class="team-grid">
                 <div class="team-card card">
                     <div class="card-img-wrapper">
-                        <div class="team-photo-placeholder">Image</div>
+                        <div class="team-photo-placeholder">
+                            <img src="./Assets/images/yowas.jpeg" alt="Pius Okitwi">
+                        </div>
                     </div>
                     <div class="card-body">
-                        <h3>Member Name</h3>
-                        <p class="muted-label">Role / Agronomist</p>
-                        <p class="product-description">Short bio or specialties go here. Replace with real photo and details.</p>
+                        <h3>Owor Moses</h3>
+                        <p class="muted-label">Head of Operations</p>
+                        <p class="product-description">Owor Moses is the Head of Operations, overseeing day-to-day logistics, supply chain efficiency, and cross-functional workflows. With 10 years of experience, they optimize operational performance and scale sustainable internal systems to ensure seamless business growth and execution.</p>
                     </div>
                 </div>
                 <div class="team-card card">
                     <div class="card-img-wrapper">
-                        <div class="team-photo-placeholder">Image</div>
+                        <div class="team-photo-placeholder">
+                            <img src="./Assets/images/Pius.jpeg" alt="Opio Dior">
+                        </div>
                     </div>
                     <div class="card-body">
-                        <h3>Member Name</h3>
-                        <p class="muted-label">Role / Field Officer</p>
-                        <p class="product-description">Short bio or specialties go here. Replace with real photo and details.</p>
+                        <h3>Mr. Pius</h3>
+                        <p class="muted-label">Field Officer</p>
+                        <p class="product-description">Mr. Pius is a Field Officer with extensive experience in agricultural practices and community engagement. They work closely with farmers to provide technical support and facilitate the adoption of best practices.</p>
                     </div>
                 </div>
                 <div class="team-card card">
                     <div class="card-img-wrapper">
-                        <div class="team-photo-placeholder">Image</div>
+                        <div class="team-photo-placeholder">
+                            <img src="./Assets/images/shamba board.jpeg" alt="Shamba Board Member">
+                        </div>
                     </div>
                     <div class="card-body">
-                        <h3>Member Name</h3>
-                        <p class="muted-label">Role / Operations</p>
-                        <p class="product-description">Short bio or specialties go here. Replace with real photo and details.</p>
+                        <h3>ShambaLink BoardMembers</h3>
+                        <p class="muted-label">Overall Leadership</p>
+                        <p class="product-description">The ShambaLink BoardMembers provide strategic direction and oversight for the organization, ensuring alignment with our mission and values.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container careers-section" id="careers">
+            <div class="section-header">
+                <h2>Careers at Shambalinks</h2>
+                <p>Join a practical, mission-led team building better tools and market access for farmers.</p>
+            </div>
+            <div class="summary-card careers-card">
+                <div class="summary-body">
+                    <div>
+                        <p class="muted-label">Open opportunities</p>
+                        <h3>Work with us</h3>
+                        <p>Send your profile and area of interest to our team to hear about upcoming roles.</p>
+                    </div>
+                    <a href="pages/contact.html" class="btn">Contact our team</a>
                 </div>
             </div>
         </section>
@@ -244,7 +267,9 @@
                 <div class="products-grid">
                     <div class="product-card">
                         <div class="product-image">
-                            <div class="product-placeholder" aria-hidden="true">Image placeholder</div>
+                            <div class="product-placeholder" aria-hidden="true">
+                                <img src="./Assets/images/organic.jpeg" alt="Organic seeds pack" onerror="this.style.display='none'">
+                            </div>
                             <div class="product-overlay">
                                 <button class="btn" onclick="window.addToCart && window.addToCart({name:'Organic Seeds Pack', price:29900, type:'product'})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
                             </div>
@@ -259,11 +284,15 @@
                             </div>
                         </div>
                     </div>
+                    
+
                     <div class="product-card">
                         <div class="product-image">
-                            <div class="product-placeholder" aria-hidden="true">Image placeholder</div>
+                            <div class="product-placeholder" aria-hidden="true">
+                                <img src="./Assets/images/Sprayer Kit.jpg" alt="Sprayer Kit" onerror="this.style.display='none'">
+                            </div>
                             <div class="product-overlay">
-                                <button class="btn" onclick="window.addToCart && window.addToCart({name:'Smart Drip Kit', price:149000, type:'product'})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                                <button class="btn" onclick="window.addToCart && window.addToCart({name:'Sprayer Kit', price:149000, type:'product'})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
                             </div>
                         </div>
                         <div class="product-info">
@@ -276,9 +305,12 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="product-card">
                         <div class="product-image">
-                            <div class="product-placeholder" aria-hidden="true">Image placeholder</div>
+                            <div class="product-placeholder" aria-hidden="true">
+                               <img src="./Assets/images/soil monitoring.jpeg" alt="Soil Monitoring Sensor" onerror="this.style.display='none'">
+                            </div>
                             <div class="product-overlay">
                                 <button class="btn" onclick="window.addToCart && window.addToCart({name:'Soil Monitoring Sensor', price:89900, type:'product'})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
                             </div>
@@ -293,9 +325,12 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="product-card">
                         <div class="product-image">
-                            <div class="product-placeholder" aria-hidden="true">Image placeholder</div>
+                            <div class="product-placeholder" aria-hidden="true">
+                                <img src="./Assets/images/crop advisory 2.jpg" alt="Crop Advisory Package" onerror="this.style.display='none'">
+                            </div>
                             <div class="product-overlay">
                                 <a class="btn" href="pages/contact.html"><i class="fa-solid fa-envelope"></i> Request Service</a>
                             </div>
